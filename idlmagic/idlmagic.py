@@ -30,6 +30,10 @@ class IDLMagics(Magics):
 
         idl_run(cell)
 
+    @line_magic("idl_var")
+    def idl_var(self, line):
+        return idl_get_var(line.strip())
+
 
 def idl_run(commands, r=None):
     """
@@ -87,4 +91,9 @@ def idl_run(commands, r=None):
 
     # return `r` variable
     if r is not None:
-        return getattr(idlpy.IDL, r)
+        return idl_get_var(r)
+
+
+def idl_get_var(r):
+    import idlpy
+    return getattr(idlpy.IDL, r)
