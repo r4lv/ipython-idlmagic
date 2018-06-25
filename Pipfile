@@ -13,6 +13,7 @@ ipython = ">=0.13"
 [dev-packages]
 
 mockito = "*"
+"bump2version" = "*"
 
 
 [requires]
