@@ -14,8 +14,16 @@ ipython = ">=0.13"
 
 mockito = "*"
 "bump2version" = "*"
+twine = "*"
 
 
 [requires]
 
 python_version = "3.6"
+
+
+[scripts]
+
+build = "python setup.py sdist bdist_wheel --universal"
+up-test = "twine upload --repository-url https://test.pypi.org/legacy/ dist/*"
+up = "twine upload dist/*"

@@ -53,3 +53,10 @@ Out[16]: array([10, 11, 12, 13], dtype=int16)
 ```
 
 Check the [documentation](https://r4lv.github.io/ipython-idlmagic) for more examples.
+
+
+## Changes
+
+**v0.1.0**
+
+- first release
