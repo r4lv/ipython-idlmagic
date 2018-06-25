@@ -1,4 +1,4 @@
-VERSION = (0, 0, 0)
+VERSION = (0, 1, 0)
 __version__ = ".".join(map(str, VERSION))
 __description__ = ("%%idl magic for IPython and Jupyter notebooks, providing "
                    "access to Harris Geospatial's IDL programming language.")
